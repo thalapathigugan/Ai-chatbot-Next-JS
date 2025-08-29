@@ -1,4 +1,6 @@
+
 import type { Config } from 'tailwindcss'
+import typography from '@tailwindcss/typography';
 
 const config: Config = {
   content: [
@@ -11,19 +13,15 @@ const config: Config = {
     extend: {
       colors: {
         'primary': '#10a37f',
-        'user-message-bg': {
-          DEFAULT: '#f0f4f9',
-          dark: '#40414f',
-        },
-        'bot-message-bg': {
-          DEFAULT: '#f7f7f8',
-          dark: '#444654',
-        },
+        'user-message-bg': '#f0f4f9',
+        'user-message-bg-dark': '#40414f',
+        'bot-message-bg': '#f7f7f8',
+        'bot-message-bg-dark': '#444654',
       },
     },
   },
   plugins: [
-    require('@tailwindcss/typography'),
+    typography,
   ],
 }
 export default config
