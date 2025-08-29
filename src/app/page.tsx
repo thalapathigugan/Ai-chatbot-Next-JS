@@ -407,7 +407,7 @@ function Footer() {
 
   return(
     <div className="chat-footer">
-      <form onSubmit={handleSubmit} className="chat-from">
+      <form onSubmit={handleSubmit} className="chat-form">
         <textarea 
           ref={textareaRef}
           value={message}
